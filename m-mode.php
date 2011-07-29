@@ -620,13 +620,13 @@ if( !isset($myMaMo)  ) {
 			# Old option names to delete from the options table; newest last please
 				'DeleteOldOpt' =>	array('plugin_maintenancemode', 'plugin_maintenancemode2','plugin_maintenance-mode_5'),
 			# Plugin version
-				'Version' => 		'7.6',
+				'Version' => 		'1.0',
 			# First plugin version of which we do not reset the plugin options to default;
 			# Normally we reset the plugin's options after an update; but if we for example
 			# update the plugin from version 2.3 to 2.4 und did only do minor changes and
 			# not any option modifications, we should enter '2.3' here. In this example
 			# options are being reset to default only if the old plugin version was < 2.3.
-				'UseOldOpt' => 		'7.0',
+				'UseOldOpt' => 		'1.0',
 			# Copyright year(s)
 				'CopyrightYear' => 	'2011',
 			# Minimum WordPress version
