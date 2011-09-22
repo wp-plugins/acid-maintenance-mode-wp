@@ -576,7 +576,7 @@ class MaintenanceMode_SWGPluginFramework {
 
 } // class PluginOptions
 
-function seowatcher_supportlink() {
-	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web'>Posicionamiento web</a></div>\n";
+function seowatcher_supportlink00() {
+	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web SEO'>Posicionamiento web SEO</a></div>\n";
 }
 ?>
