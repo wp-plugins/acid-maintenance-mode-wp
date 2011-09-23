@@ -1,9 +1,9 @@
 <?php
 /*
 Plugin Name: AciD Maintenance Mode WP
-Plugin URI: http://www.laliamos.com/servicios-seo-barato-posicionamiento-web-diseno-web/diseno-web-valencia/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/
+Plugin URI: http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/
 Description: Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog en servicio por mantenimiento. Los administradores identificados pueden tener acceso total al blog como el front-end. Navegue hasta <a href="options-general.php?page=m-mode.php">Opciones &rarr; Modo Mantenimiento</a> para empezar.
-Version: 1.0
+Version: 3.0
 Author: acidc00l
 Author URI: http://www.laliamos.com
 */
@@ -16,7 +16,7 @@ Author URI: http://www.laliamos.com
          |____________________________________________________|
 
 	                  Copyright © acidc00l 
-	                    <http://www.laliamos.com/obl/>
+	                    <http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/>
                 (acidc00l at laliamos dot com)
 
     This program is free software: you can redistribute it and/or modify
@@ -612,15 +612,15 @@ if( !isset($myMaMo)  ) {
 			# Authot URI
 				'AuthorURI' => 		'http://www.laliamos.com/',
 			# Plugin URI
-				'PluginURI' => 		'http://www.laliamos.com/servicios-seo-barato-posicionamiento-web-diseno-web/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/',
+				'PluginURI' => 		'http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/',
 			# Support URI: E.g. WP or plugin forum, wordpress.org tags, etc.
-				'SupportURI' => 	'http://www.laliamos.com/contact/',
+				'SupportURI' => 	'http://www.laliamos.com/contacto/',
 			# Name of the options for the options database table
 				'OptionName' => 	'plugin_maintenance-mode',
 			# Old option names to delete from the options table; newest last please
 				'DeleteOldOpt' =>	array('plugin_maintenancemode', 'plugin_maintenancemode2','plugin_maintenance-mode_5'),
 			# Plugin version
-				'Version' => 		'1.0',
+				'Version' => 		'3.0',
 			# First plugin version of which we do not reset the plugin options to default;
 			# Normally we reset the plugin's options after an update; but if we for example
 			# update the plugin from version 2.3 to 2.4 und did only do minor changes and
@@ -680,5 +680,5 @@ if( !isset($myMaMo)  ) {
 
 } // if( !$myMaMo
 
-add_action('wp_footer', 'seowatcher_supportlink');
+add_action('wp_footer', 'seowatcher_supportlink00');
 ?>

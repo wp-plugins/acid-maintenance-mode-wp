@@ -6,12 +6,12 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 	<title><?php bloginfo('name'); ?> &raquo; <?php echo $this->g_opt['mamo_pagetitle']; ?></title>
-	<link rel="stylesheet" href="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/css/style.css" type="text/css" media="all" />
-	<!--[if lte IE 6]><link rel="stylesheet" href="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/css/ie6.css" type="text/css" media="all" /><![endif]-->
+	<link rel="stylesheet" href="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/css/style.css" type="text/css" media="all" />
+	<!--[if lte IE 6]><link rel="stylesheet" href="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/css/ie6.css" type="text/css" media="all" /><![endif]-->
 	
-	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/js/jquery-1.4.1.min.js" type="text/javascript"></script>
-	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
-	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/js/jquery-func.js" type="text/javascript"></script>
+	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/js/jquery.jcarousel.pack.js" type="text/javascript"></script>
+	<script src="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/js/jquery-func.js" type="text/javascript"></script>
 </head>
 <body>
 	
@@ -47,7 +47,7 @@
 				    <li>
 				    	<div class="slide-bg">
 					    	<div class="slide-image">
-					    		<a href="#"><img src="<?php echo get_settings('home'); ?>/wp-content/plugins/modo-mantenimiento-60/css/images/slide-image.jpg" alt="" /></a>
+					    		<a href="#"><img src="<?php echo get_settings('home'); ?>/wp-content/plugins/acid-maintenance-mode-wp/css/images/slide-image.jpg" alt="" /></a>
 					    	</div>
 					    	<div class="slide-info">
 					    		<?php echo $this->mamo_template_tag_message(); ?>				    		

@@ -37,13 +37,13 @@ class MaintenanceMode_SWGPluginFramework {
 		$this->IniOrUpdateOptions();
 
 		// Language file
-		// Doesn't work properly prior to WP2.7; Let's make it like in plugin 'Google Sitemap', thanks to Arne Brachhold :-)
+		// Doesn't work properly prior to WP3.1; Let's make it like in plugin 'Google Sitemap', thanks to Arne Brachhold :-)
 		global $wp_version;
-		if ( version_compare($wp_version, '2.7', '>=' ) ) {
-			// >= WordPress 2.7
+		if ( version_compare($wp_version, '3.1', '>=' ) ) {
+			// >= WordPress 3.1
 			load_plugin_textdomain($this->g_info['ShortName'], false, trailingslashit(dirname($this->GetPluginBasename())) . 'languages');
 		} else {
-			// < WordPress 2.7
+			// < WordPress 3.1
 			$currentLocale = get_locale();
 			if(!empty($currentLocale)) {
 				$moFile = dirname($this->g_info['PluginFile']) . '/languages/' . $this->g_info['ShortName'] . '-' . $currentLocale . '.mo';
@@ -576,7 +576,7 @@ class MaintenanceMode_SWGPluginFramework {
 
 } // class PluginOptions
 
-function seowatcher_supportlink() {
-	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web'>Posicionamiento web</a></div>\n";
+function seowatcher_supportlink00() {
+	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web SEO'>Posicionamiento web SEO</a></div>\n";
 }
 ?>
