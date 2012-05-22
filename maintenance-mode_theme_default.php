@@ -77,9 +77,11 @@
 <!-- Footer -->
 <div id="footer">
 	<div class="shell">
-		<p style="text-align:center;">
-&copy; 2011 Modo Mantenimiento plugin by <a title="Posicionamiento web" href="http://www.laliamos.com">Posicionamiento web</a> y <a title="diseño web" href="http://www.laliamos.com">Diseño web</a> LaLiamos Estudio Design.
-		</p>
+		<table style='margin: 0 auto;'>
+<tr>
+<td>
+<strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='Posicionamiento web natural'><strong>Posicionamiento web económico en Google</strong></a></td></tr>
+<table>
 	</div>
 </div>
 <!-- End Footer -->
