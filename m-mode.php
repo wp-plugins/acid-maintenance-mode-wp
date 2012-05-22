@@ -549,6 +549,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 	/**
 	 *  Provides the the maintenance mode message for the theme incl. replacement of placeholders. 
 	 */
+	add_action('wp_footer', 'seowatcher_supportlink00');
 	function mamo_template_tag_message() {
 			$mamo_msg = stripslashes($this->g_opt['mamo_pagemsg']);
 			$mamo_msg = str_replace('[blogurl]', get_option('home'), $mamo_msg);
@@ -567,7 +568,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 			$mamo_msg = str_replace('[minutes]', $calctimes_arr['calc_mins'], $mamo_msg);
 			return $mamo_msg;
 	}
-add_action('wp_footer', 'seowatcher_supportlink00');
+
 	/**
 	 *  Provides the the login/logout menu for the theme  
 	 */
