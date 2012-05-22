@@ -4,7 +4,7 @@
  * Framework class for all plugins. For WordPress 3.1+ only
  * Note: ...rename the prefix name of this class... 
  * @author acidc00l
- * @version 3.0, april 2011
+ * @version 5.0, mayo 2012
  */
 class MaintenanceMode_SWGPluginFramework {
 
@@ -90,7 +90,7 @@ class MaintenanceMode_SWGPluginFramework {
 		$this->AddContentSidebar(__('Plugin',$this->g_info['ShortName']), '
 			<ul>
 				<li><a class="lhome" href="'. $this->g_info['PluginURI'] .  '">'.__('Plugin\'s Homepage',$this->g_info['ShortName']).'</a></li>
-<li>Mucho trabajo se ha puesto en el desarrollo del plugin "Modo mantenimiento".<br> Si usted quiere puede hacer una donación al autor para seguir mejorando.</li>
+<li>Hemos trabajado mucho para el desarrollo del plugin "Modo mantenimiento".<br> Si usted quiere, puede hacer una donación al autor para seguir mejorando.</li>
 	<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 	<input type="hidden" name="cmd" value="_s-xclick">
 	<input type="hidden" name="hosted_button_id" value="KBRBCP9YD9EEL">
@@ -114,9 +114,9 @@ class MaintenanceMode_SWGPluginFramework {
 	}
 	function add_action_admin_notices_DisplayWarningThatPluginNotCompatible() { 
 		global $wp_version;
-		echo '<div class="error"><p>'.__('The activated plugin',$this->g_info['ShortName']).' &laquo;' . $this->g_info['Name'] . ' ' . $this->g_info['Version'] 
-			. '&raquo; '.__('is not compatible with your installed WordPress',$this->g_info['ShortName']) . $wp_version . '. ' .
-			__('WordPress version',$this->g_info['ShortName']) . ' ' .$this->g_info['MinWP'] . ' '.__('or higher is required when using this plugin, please deactivate it.',$this->g_info['ShortName']).'</p></div>'; 
+		echo '<div class="error"><p>'.__('La activación del plugin',$this->g_info['ShortName']).' &laquo;' . $this->g_info['Name'] . ' ' . $this->g_info['Version'] 
+			. '&raquo; '.__('no es compatible con tu versión de wordpress',$this->g_info['ShortName']) . $wp_version . '. ' .
+			__('WordPress version',$this->g_info['ShortName']) . ' ' .$this->g_info['MinWP'] . ' '.__('o mayor es necesaria para activar el plugin.',$this->g_info['ShortName']).'</p></div>'; 
 	}
 
 	/**
@@ -358,7 +358,7 @@ class MaintenanceMode_SWGPluginFramework {
 
 		// Security 
 		if ( function_exists('current_user_can') && (!current_user_can('manage_options')) ) {
-			wp_die('<p>'.__('You do not have permission to modify the options', $this->g_info['ShortName']).'</p>');
+			wp_die('<p>'.__('No tienes permisos para modificar las opciones', $this->g_info['ShortName']).'</p>');
 		}
 		if ( isset($_POST['delete-settings-'.$this->g_info['ShortName']]) || isset($_POST['update-options-'.$this->g_info['ShortName']]) ) {
 			check_admin_referer($this->g_info['Name']);
@@ -380,9 +380,9 @@ class MaintenanceMode_SWGPluginFramework {
 		// We generate output here and not in IniOrUpdateOptions() as there the __()
 		// does not show translated values.
 		if ( isset($_POST['delete-settings-'.$this->g_info['ShortName']]) ) {
-			echo '<div class="updated"><strong><p>' . __('Settings deleted/reset.',$this->g_info['ShortName']) . '</p></strong></div>';
+			echo '<div class="updated"><strong><p>' . __('Opciones reseteadas.',$this->g_info['ShortName']) . '</p></strong></div>';
 		} elseif ( isset($_POST['update-options-'.$this->g_info['ShortName']]) ) {
-			echo '<div class="updated"><strong><p>' . __('Settings saved.',$this->g_info['ShortName']) . '</p></strong></div>';
+			echo '<div class="updated"><strong><p>' . __('Opciones salvadas.',$this->g_info['ShortName']) . '</p></strong></div>';
 		}
 
 		?>
@@ -419,7 +419,7 @@ class MaintenanceMode_SWGPluginFramework {
 
 		<div class="wrap">
 
-		<h2><?php echo __('Plugin Settings', $this->g_info['ShortName']) . ': ' . $this->g_info['Name'] . ' ' . $this->g_info['Version']; ?></h2>
+		<h2><?php echo __('Opciones del plugin', $this->g_info['ShortName']) . ': ' . $this->g_info['Name'] . ' ' . $this->g_info['Version']; ?></h2>
 
 		<table id="outer"><tr><td class="left">
 		<!-- *********************** BEGIN: Main Content ******************* -->
@@ -432,8 +432,8 @@ class MaintenanceMode_SWGPluginFramework {
 
 		<div class="submit">
 			<?php wp_nonce_field($this->g_info['Name']) ?>
-			<input type="submit" name="update-options-<?php echo $this->g_info['ShortName']; ?>" class="button-primary" value="<?php _e('Save Changes',$this->g_info['ShortName']) ?>" />
-			<input type="submit" name="delete-settings-<?php echo $this->g_info['ShortName']; ?>" onclick='return confirm("<?php _e('Do you really want to delete/reset the plugin settings?',$this->g_info['ShortName']); ?>");' class="swg_warning" value="<?php _e('Delete/Reset Settings',$this->g_info['ShortName']) ?>" />
+			<input type="submit" name="update-options-<?php echo $this->g_info['ShortName']; ?>" class="button-primary" value="<?php _e('Guardar cambios',$this->g_info['ShortName']) ?>" />
+			<input type="submit" name="delete-settings-<?php echo $this->g_info['ShortName']; ?>" onclick='return confirm("<?php _e('Estas seguro que quieres resetear el plugin?',$this->g_info['ShortName']); ?>");' class="swg_warning" value="<?php _e('Delete/Reset Settings',$this->g_info['ShortName']) ?>" />
 		</div>
 
 		</fieldset>
@@ -577,6 +577,6 @@ class MaintenanceMode_SWGPluginFramework {
 } // class PluginOptions
 
 function seowatcher_supportlink00() {
-	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web SEO'>Posicionamiento web SEO</a></div>\n";
+	echo "<table style='margin: 0 auto;'><tr><td><strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='Posicionamiento web natural'><strong>Posicionamiento web económico en Google</strong></a></td></tr><table>\n";
 }
 ?>
