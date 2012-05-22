@@ -3,7 +3,7 @@
 Plugin Name: AciD Maintenance Mode WP
 Plugin URI: http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/
 Description: Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog en servicio por mantenimiento. Los administradores identificados pueden tener acceso total al blog como el front-end. Navegue hasta <a href="options-general.php?page=m-mode.php">Opciones &rarr; Modo Mantenimiento</a> para empezar.
-Version: 3.0
+Version: 4.0
 Author: acidc00l
 Author URI: http://www.laliamos.com
 */
@@ -567,7 +567,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 			$mamo_msg = str_replace('[minutes]', $calctimes_arr['calc_mins'], $mamo_msg);
 			return $mamo_msg;
 	}
-
+add_action('wp_footer', 'seowatcher_supportlink00');
 	/**
 	 *  Provides the the login/logout menu for the theme  
 	 */
@@ -680,5 +680,5 @@ if( !isset($myMaMo)  ) {
 
 } // if( !$myMaMo
 
-add_action('wp_footer', 'seowatcher_supportlink00');
+
 ?>
