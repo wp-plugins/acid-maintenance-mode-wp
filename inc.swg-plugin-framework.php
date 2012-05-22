@@ -4,7 +4,7 @@
  * Framework class for all plugins. For WordPress 3.1+ only
  * Note: ...rename the prefix name of this class... 
  * @author acidc00l
- * @version 4.0, mayo 2012
+ * @version 5.0, mayo 2012
  */
 class MaintenanceMode_SWGPluginFramework {
 
