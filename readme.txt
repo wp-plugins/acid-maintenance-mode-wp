@@ -7,7 +7,7 @@ Author URI: http://www.laliamos.com
 Tags: maintenance, mode, admin, administration, unavailable, offline, construction, mantenimiento, modo
 Requires at least: 3.3.2
 Tested up to: 3.3.2
-Stable tag: 6.0
+Stable tag: 6.1
 
 Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog esta en servicio de mantenimiento.
 
@@ -39,6 +39,16 @@ Porfavor visita/please visit: [the official website](http://www.laliamos.com/obl
 4. Plugin options, part 2
 
 == Changelog ==
+
+= 6.1 [2012-05-22] =
+* Correct error_FATAL
+* Correct error_FATAL
+* Correct error_FATAL
+* Eliminate options in admin
+* Correct bugs into template
+* Correct bug links
+* Correct bug themes
+* Initial release
 
 = 6.0 [2012-05-22] =
 * Correct error_FATAL

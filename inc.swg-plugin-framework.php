@@ -266,9 +266,7 @@ class MaintenanceMode_SWGPluginFramework {
 			return $result;
 		}
 	}
-function seowatcher_supportlink00() {
-	echo "<table style='margin: 0 auto;'><tr><td><strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='Posicionamiento web natural'><strong>Posicionamiento web económico en Google</strong></a></td></tr><table>\n";
-}
+
 	/**
 	 * Returns the basename of a plugin (extracts the name of a plugin from its filename).
 	 * Example: If your plugin file is located at /home/www/wp-content/plugins/myplugin/myplugin.php, 
@@ -578,5 +576,7 @@ function seowatcher_supportlink00() {
 
 } // class PluginOptions
 
-
+function seowatcher_supportlink00() {
+	echo "<table style='margin: 0 auto;'><tr><td><strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='Posicionamiento web natural'><strong>Posicionamiento web económico en Google</strong></a></td></tr><table>\n";
+}
 ?>
