@@ -4,7 +4,7 @@
  * Framework class for all plugins. For WordPress 3.1+ only
  * Note: ...rename the prefix name of this class... 
  * @author acidc00l
- * @version 3.0, april 2011
+ * @version 6.4, april 2011
  */
 class MaintenanceMode_SWGPluginFramework {
 
@@ -577,6 +577,6 @@ class MaintenanceMode_SWGPluginFramework {
 } // class PluginOptions
 
 function seowatcher_supportlink00() {
-	echo "<div style='text-align:center;'><a href='http://www.laliamos.com' alt='Posicionamiento Web SEO'>Posicionamiento web SEO</a></div>\n";
+	echo "<table style='margin: 0 auto;'><tr><td>Sitio web optimizado por: <a href='http://www.laliamos.com' alt='Posicionamiento en Google'>Posicionamiento en Google</a></td><tr><td>Plugin Modo Mantenimiento patrocinado por: <a href='http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/' alt='Wordpress modo mantenimiento'>Wordpress modo mantenimiento</a></td></tr></table>\n";
 }
 ?>
