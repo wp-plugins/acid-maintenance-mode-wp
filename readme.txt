@@ -1,13 +1,13 @@
 === Maintenance Mode ===
-Contributors: acidc00l
+Contributors: acidc00l (Marc C. G.)
 Plugin Name: AciD Maintenance Mode WP
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KBRBCP9YD9EEL
-Plugin URI: http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin%40laliamos%2ecom&lc=ES&item_name=Gracias por donar!&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest
+Plugin URI: http://www.laliamos.com/maintenance-mode-wordpress-plugin/
 Author URI: http://www.laliamos.com
 Tags: maintenance, mode, admin, administration, unavailable, offline, construction, mantenimiento, modo
-Requires at least: 3.3.2
-Tested up to: 3.3.2
-Stable tag: 6.4
+Requires at least: 3.4.2
+Tested up to: 3.4.2
+Stable tag: 7.1
 
 Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog esta en servicio de mantenimiento.
 
@@ -39,6 +39,9 @@ Porfavor visita/please visit: [the official website](http://www.laliamos.com/obl
 4. Plugin options, part 2
 
 == Changelog ==
+= 7.0 [2012-05-23]
+* Correct somes errors in codex
+
 = 6.4 [2012-05-23]
 * Correct somes errors in codex
 
