@@ -43,7 +43,18 @@ Cufon.replace('#head h1,#subhead h3', { fontFamily: 'Myriad Pro' });
 <table style='margin: 0 auto;'>
 <tr>
 <td>
-<strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='Posicionamiento web natural'><strong>Posicionamiento web económico en Google</strong></a></td></tr>
+<?php
+// Completamos el vector con frases
+$vector = array(
+1 => "Posicionamiento web.",
+2 => "SEO Valencia",
+);
+
+// Obtenemos un número aleatorio
+$numero = rand(1,2); 
+
+// Imprimimos la frase
+echo "<strong>Sitio optimizado por/Website optimized by:</strong> <a href='http://www.laliamos.com' alt='$vector[$numero]'><strong>$vector[$numero]</strong></a>"; ?></td></tr>
 <table>
 </div>
 </body>
