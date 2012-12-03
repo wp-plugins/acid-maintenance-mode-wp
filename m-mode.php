@@ -3,7 +3,7 @@
 Plugin Name: AciD Maintenance Mode WP
 Plugin URI: http://www.laliamos.com/maintenance-mode-wordpress-plugin/
 Description: Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog en servicio por mantenimiento. Los administradores identificados pueden tener acceso total al blog como el front-end. Navegue hasta <a href="options-general.php?page=m-mode.php">Opciones &rarr; Modo Mantenimiento</a> para empezar.
-Version: 7.0
+Version: 7.1
 Author: acidc00l (Marc C. G.)
 Author URI: http://www.laliamos.com
 */

@@ -7,7 +7,7 @@ Author URI: http://www.laliamos.com
 Tags: maintenance, mode, admin, administration, unavailable, offline, construction, mantenimiento, modo
 Requires at least: 3.4.2
 Tested up to: 3.4.2
-Stable tag: 7.0
+Stable tag: 7.1
 
 Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog esta en servicio de mantenimiento.
 
