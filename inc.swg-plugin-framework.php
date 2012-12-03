@@ -91,12 +91,7 @@ class MaintenanceMode_SWGPluginFramework {
 			<ul>
 				<li><a class="lhome" href="'. $this->g_info['PluginURI'] .  '">'.__('Plugin\'s Homepage',$this->g_info['ShortName']).'</a></li>
 <li>Mucho trabajo se ha puesto en el desarrollo del plugin "Modo mantenimiento".<br> Si usted quiere puede hacer una donación al autor para seguir mejorando.</li>
-	<li><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	<input type="hidden" name="cmd" value="_s-xclick">
-	<input type="hidden" name="hosted_button_id" value="KBRBCP9YD9EEL">
-	<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-	<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-	</form></li>
+	<li>https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=admin%40laliamos%2ecom&lc=ES&item_name=Gracias por donar!&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest</li>
 			</ul>			
 			');
 	}
@@ -577,6 +572,20 @@ class MaintenanceMode_SWGPluginFramework {
 } // class PluginOptions
 
 function seowatcher_supportlink00() {
-	echo "<table style='margin: 0 auto;'><tr><td>Sitio web optimizado por: <a href='http://www.laliamos.com' alt='Posicionamiento en Google'>Posicionamiento en Google</a></td><tr><td>Plugin Modo Mantenimiento patrocinado por: <a href='http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/' alt='Wordpress modo mantenimiento'>Wordpress modo mantenimiento</a></td></tr></table>\n";
+$vector = array( 
+1 => "Posicionamiento en Google",
+2 => "SEO Valencia",
+3 => "Diseño Web",
+);
+$numero = rand(1,3); 
+
+$vector2 = array( 
+1 => "Wordpress modo mantenimiento",
+2 => "Plugin WordPress Maintenance",
+);
+$numero2 = rand(1,2);
+
+
+echo "<table style='margin: 0 auto;'><tr><td>Sitio web optimizado por: <a href='http://www.laliamos.com' alt='$vector[$numero]'>$vector[$numero]</a></td><tr><td>Plugin Modo Mantenimiento patrocinado por: <a href='http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/' alt='$vector2[$numero2]'>$vector2[$numero2]</a></td></tr></table>\n";
 }
 ?>
