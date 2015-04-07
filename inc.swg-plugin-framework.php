@@ -573,19 +573,19 @@ class MaintenanceMode_SWGPluginFramework {
 
 function seowatcher_supportlink00() {
 $vector = array( 
-1 => "Posicionamiento en Google",
-2 => "SEO Valencia",
-3 => "Diseño Web",
+1 => "key giveaway",
+2 => "bundles",
+3 => "noticias juegos",
 );
 $numero = rand(1,3); 
 
 $vector2 = array( 
-1 => "Wordpress modo mantenimiento",
-2 => "Plugin WordPress Maintenance",
+1 => "posicionamiento web",
+2 => "seo valencia",
 );
 $numero2 = rand(1,2);
 
 
-echo "<table style='margin: 0 auto;'><tr><td>Sitio web optimizado por: <a href='http://www.laliamos.com' alt='$vector[$numero]'>$vector[$numero]</a></td><tr><td>Plugin Modo Mantenimiento patrocinado por: <a href='http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/' alt='$vector2[$numero2]'>$vector2[$numero2]</a></td></tr></table>\n";
+echo "<table style='margin: 0 auto;'><tr><td>Plugin creado por AcIDc00L: <a href='http://www.acidc00l.com' alt='$vector[$numero]'>$vector[$numero]</a></td><tr><td>Plugin Modo Mantenimiento patrocinado por: <a href='http://www.laliamos.com' alt='$vector2[$numero2]'>$vector2[$numero2]</a></td></tr></table>\n";
 }
 ?>
