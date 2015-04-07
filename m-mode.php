@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: AciD Maintenance Mode WP
-Plugin URI: http://www.laliamos.com/maintenance-mode-wordpress-plugin/
-Description: Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog en servicio por mantenimiento. Los administradores identificados pueden tener acceso total al blog como el front-end. Navegue hasta <a href="options-general.php?page=m-mode.php">Opciones &rarr; Modo Mantenimiento</a> para empezar.
-Version: 7.1
+Plugin URI: http://www.acidc00l.com/
+Description: Agrega una página de bienvenida a su blog que permite a los visitantes conocer su blog en servicio por mantenimiento. Los administradores identificados pueden tener acceso total al blog como el front-end. Navegue hasta <a href="options-general.php?page=m-mode.php">Opciones &rarr; Modo Mantenimiento</a> para empezar. Al activar este plugin estas deacuerdo con los enlaces añadidos en el footer de tu web por el mantenimiento del plugin.
+Version: 8.0
 Author: acidc00l (Marc C. G.)
-Author URI: http://www.laliamos.com
+Author URI: http://www.acidc00l.com
 */
 
 /*
@@ -16,7 +16,7 @@ Author URI: http://www.laliamos.com
          |____________________________________________________|
 
 	                  Copyright © acidc00l 
-	                    <http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/>
+	                    <http://www.acidc00l.com/>
                 (acidc00l at laliamos dot com)
 
     This program is free software: you can redistribute it and/or modify
@@ -57,7 +57,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 					// Display link only if user is administrator / can manage options.
 					$link_to_mamo_opt = '';
 					if ( current_user_can('manage_options') ) {
-						$link_to_mamo_opt = __("No olvides", $this->g_info['ShortName']) . ' <a href="admin.php?page=' . basename($this->g_info['PluginFile']) . '">' . __('desactivar', $this->g_info['ShortName']) . '</a> ' . __('cuando el mantenimiento termine.', $this->g_info['ShortName']);
+						$link_to_mamo_opt = __("No olvides", $this->g_info['ShortName']) . ' <a href="admin.php?page=' . basename($this->g_info['PluginFile']) . '">' . __('desactivar', $this->g_info['ShortName']) . '</a> ' . __('cuando el mantenimiento termine. Recuerda que si no quieres que salgan los enlaces del autor en el footer de tu web, deberás desactivar el plugin completamente.', $this->g_info['ShortName']);
 					}
 					$msg = '<div class="error"><p>' . __("Modo mantenimiento activo.",$this->g_info['ShortName']) . ' ' . $link_to_mamo_opt . '</p></div>';
 					add_action('admin_notices', $c = create_function('', 'echo "' . addcslashes($msg,'"') . '";')); // We use addcslashes otherwise it causes a parse error when the $msg contains a single quote
@@ -332,7 +332,7 @@ class MaintenanceMode extends MaintenanceMode_SWGPluginFramework {
 			<p class='swginfo'>".__('Select the theme for the maintenance mode splash page (check out the screenshots in the plugin directory for a preview).',$this->g_info['ShortName']).'<br />'.
 			__('If you select &laquo;<em>Use 503.php from theme folder</em>&raquo;, the plugin will use the file \'503.php\' from the current theme directory for the splash page. If there is no \'503.php\', it will use the default theme.',$this->g_info['ShortName']).' '.
 			__('So this option will help using a customized splash page without the fear of losing this page when updating the plugin.',$this->g_info['ShortName']).' <br /><br />'
-			. __('Has diseñado un tema hermoso para la página de bienvenida y lo quieres compartir? Por favor, sigue este enlace <a href=\"http://www.laliamos.com/contact/\">y contacta conmigo para añadirlo al plugin.',$this->g_info['ShortName'])
+			. __('Has diseñado un tema hermoso para la página de bienvenida y lo quieres compartir? Por favor, sigue este enlace <a href=\"http://www.acidc00l.com/contacto/\">y contacta conmigo para añadirlo al plugin.',$this->g_info['ShortName'])
 			."</p>
 			");
 
@@ -610,17 +610,17 @@ if( !isset($myMaMo)  ) {
 			# Author of the plugin
 				'Author' => 		'acidc00l & Michael W&ouml;hrer',
 			# Authot URI
-				'AuthorURI' => 		'http://www.laliamos.com/',
+				'AuthorURI' => 		'http://www.acidc00l.com/',
 			# Plugin URI
-				'PluginURI' => 		'http://www.laliamos.com/obl-blog/wordpress-modo-mantenimiento-v6-0-spanish-plugin-wordpress/',
+				'PluginURI' => 		'http://www.acidc00l.com/',
 			# Support URI: E.g. WP or plugin forum, wordpress.org tags, etc.
-				'SupportURI' => 	'http://www.laliamos.com/contacto/',
+				'SupportURI' => 	'http://www.acidc00l.com/contacto/',
 			# Name of the options for the options database table
 				'OptionName' => 	'plugin_maintenance-mode',
 			# Old option names to delete from the options table; newest last please
 				'DeleteOldOpt' =>	array('plugin_maintenancemode', 'plugin_maintenancemode2','plugin_maintenance-mode_5'),
 			# Plugin version
-				'Version' => 		'3.0',
+				'Version' => 		'8.0',
 			# First plugin version of which we do not reset the plugin options to default;
 			# Normally we reset the plugin's options after an update; but if we for example
 			# update the plugin from version 2.3 to 2.4 und did only do minor changes and
