@@ -41,6 +41,12 @@ Recuerda que si no quieres que salgan los enlaces del autor en el footer de tu w
 4. Plugin options, part 2
 
 == Changelog ==
+= 8.0 [2015-04-07]
+* Correct somes errors in codex
+
+= 7.1 [2012-05-24]
+* Correct somes errors in codex
+
 = 7.0 [2012-05-23]
 * Correct somes errors in codex
 
